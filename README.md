@@ -103,6 +103,8 @@ console.log(sum)
 // 15
 ```
 
+__NOTE__ The single value returned can be an object or array. Often in examples it's a number or string but you can return anything. Reduce is extremely powerful and all other iterators can be written using it. It's tough to wrap one's mind around so don't worry if this one is inscrutable for now. We'll revisit it now and again...and again and again.
+
 ### [some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 - The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. If at least one element in the array passes the test of the provided function `true` is returned.  If none of the elements pass the test `false` is returned.
 
@@ -115,9 +117,6 @@ const greaterThanThree = (element) => element > 3;
 console.log(array.some(greaterThanThree));
 // expected output: true
 ```
-
-
-__NOTE__ The single value returned can be an object or array. Often in examples it's a number or string but you can return anything. Reduce is extremely powerful and all other iterators can be written using it. It's tough to wrap one's mind around so don't worry if this one is inscrutable for now. We'll revisit it now and again...and again and again.
 
 ### Method chaining & using declared functions
 
